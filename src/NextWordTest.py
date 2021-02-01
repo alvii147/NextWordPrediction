@@ -16,7 +16,7 @@ with open("../dataset/words/words.txt", 'r') as wordsfile:
 # ------------------------------------------------------------
 # Converting words to vectors using Universal Sentence Encoder
 # ------------------------------------------------------------
-embed = hub.Module("../sentence_wise_email/module/module_useT")
+embed = hub.Module("../UniversalSentenceEncoder/")
 tf.logging.set_verbosity(tf.logging.ERROR)
 with tf.Session() as session:
     session.run([tf.global_variables_initializer(), tf.tables_initializer()])
